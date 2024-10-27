@@ -17,7 +17,6 @@ Import-Module -Name Terminal-Icons
 
 # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\clean-detailed.omp.json" | Invoke-Expression
 
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
 Invoke-Expression (&starship init powershell)
 
 function Invoke-Starship-PreCommand {
